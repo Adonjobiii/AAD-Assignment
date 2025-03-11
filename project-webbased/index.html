@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matrix Chain Multiplication</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matrix Chain Multiplication</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calculator-icon">
-                    <rect width="16" height="20" x="4" y="2" rx="2"></rect>
-                    <line x1="8" x2="16" y1="6" y2="6"></line>
-                    <line x1="16" x2="16" y1="14" y2="18"></line>
-                    <path d="M16 10h.01"></path>
-                    <path d="M12 10h.01"></path>
-                    <path d="M8 10h.01"></path>
-                    <path d="M12 14h.01"></path>
-                    <path d="M8 14h.01"></path>
-                    <path d="M12 18h.01"></path>
-                    <path d="M8 18h.01"></path>
-                </svg>
-                <h1>Matrix Chain Multiplication Calculator</h1>
-            </div>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calculator-icon">
+          <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+          <line x1="8" x2="16" y1="6" y2="6"></line>
+          <line x1="16" x2="16" y1="14" y2="18"></line>
+          <path d="M16 10h.01"></path>
+          <path d="M12 10h.01"></path>
+          <path d="M8 10h.01"></path>
+          <path d="M12 14h.01"></path>
+          <path d="M8 14h.01"></path>
+          <path d="M12 18h.01"></path>
+          <path d="M8 18h.01"></path>
+        </svg>
+        <h1>Matrix Chain Multiplication Calculator</h1>
+      </div>
 
-            <div id="matrices-container" class="matrices-container">
-                <!-- Matrices will be added here dynamically -->
-            </div>
+      <div id="matrices-container" class="matrices-container">
+        <label for="dimension">Enter matrix dimensions:</label>
+        <input type="number" id="dimension" placeholder="Enter a number" min="1">
+        <button id="add-matrix" class="btn btn-primary">Add Dimension</button>
+      </div>
 
-            <div class="button-group">
-                <button id="add-matrix" class="btn btn-primary">Add Matrix</button>
-                <button id="calculate" class="btn btn-success">Calculate</button>
-            </div>
+      <div class="button-group">
+        <button id="calculate" class="btn btn-success">Calculate</button>
+      </div>
 
-            <div id="result" class="result hidden">
-                <h2>Results</h2>
-                <div class="result-content">
-                    <div>
-                        <p class="label">Optimal Parenthesization:</p>
-                        <p id="sequence" class="sequence"></p>
-                    </div>
-                    <div>
-                        <p class="label">Minimum Number of Operations:</p>
-                        <p id="operations" class="operations"></p>
-                    </div>
-                </div>
-            </div>
+      <div id="result" class="result hidden">
+        <h2>Results</h2>
+        <div class="result-content">
+          <div>
+            <p class="label">Optimal Parenthesization:</p>
+            <p id="sequence" class="sequence"></p>
+          </div>
+          <div>
+            <p class="label">Minimum Number of Operations:</p>
+            <p id="operations" class="operations"></p>
+          </div>
         </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
